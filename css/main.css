@@ -25,7 +25,7 @@ img {
   width: 100%;
 }
 
-div.photo:nth-of-type(2),
+.photo:nth-child(2),
 div.photo:last-child {
   display: none;
 }
@@ -66,4 +66,17 @@ div.photo:last-child {
     flex-wrap: wrap;
   }
 
+}
+
 @media only screen and (min-width: 60em) {
+
+  div.photo:nth-of-type(2),
+  div.photo:nth-of-type(3),
+  div.photo:nth-of-type(4),
+  div.photo:last-child {
+    display: block;
+  }
+
+  div.photo:first-child {
+    width: 66.6666%;
+  }
